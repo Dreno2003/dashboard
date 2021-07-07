@@ -14,9 +14,6 @@ const navBar =  document.querySelector('#mySidenav');
    // document.getElementsById("main").style.setProperty("margin-left", '0px', 'important');
 
 
-
-
-
    // document.getElementById("main").style.setProperty("margin-left", '0px', 'important');
 
    // .style.setProperty("background-color", "red", "important");
@@ -38,8 +35,6 @@ mediaQuery.addListener(handleTabletChange)
 
 // Initial check
 handleTabletChange(mediaQuery);
-
-
 
 
 // =====================================================================
