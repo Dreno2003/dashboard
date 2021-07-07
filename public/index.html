@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<html >
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>volsk Dashboard</title>
+	<!-- <link rel="stylesheet" type="text/css" href="jquery.mCustomScrollbar.css"> -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="navCss/nav.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<!-- <link rel="stylesheet" href="scrollbar/simple-scrollbar.css"> -->
+<!-- <script src="scrollbar/simple-scrollbar.min.js"></script> -->
+</head>
+
+<body style="background-color: #EBF4FFE3;" id="" class="html">
+
+	<header class="header text-white shadow-xl w-full fixed" style="background-color:#448aff; z-index: 3;">
+		
+		<div class=" flex justify-between pl-7 pr-7 lg:justify-end lg:flex-row-reverse p-4 items-center" id="mHeader">
+			<div class="cursor-pointer lg:ml-28" onclick="openNav()" id="openNav"><i class='fa fa-bars '></i></div>
+			<div class="text-xl cursor-pointer lg:mr-26"><b>Volsk Loan</b></div>
+			<div class="cursor-pointer elipsz lg:hidden " onclick="openEllips()"><i class=" fa fa-ellipsis-h "></i></div>
+		</div> 
+
+		<div class="flex justify-end mr-6 mb-2" id="ellipsis-toggle">
+				<div class="flex items-center justify-between w-44 laxk">
+					<div><i class="fa fa-bell"></i></div>
+					<div><img src="images/avatar-2.jpg" alt="avater-img" class="h-11" style="border-radius: 50%;"></div>
+					<div>John Doe</div> 
+					<!-- <div><i class="fa "></i></div> -->
+				</div>
+
+		</div>
+		
+	</header>
+
+	<nav class=" sidenav content ss-container -mt-2 mCSB_inside mCSB_draggerContainer  mCustomScrollBox mCustomScrollbar mCSB_outside mCSB_scrollTools mCS-dir-rtl  mCS_no_scrollbar mCustomScrollbar mCS_touch_action " id="mySidenav" >
+				<!-- navigation for mobile view -->
+
+				<div class="lopi mCSB ss-wrapperp" style="overflow-x: hidden;">
+				<div class="main-navContent h-36 -m-2 ss-content h-40" style="overflow-x: hidden;" >
+
+					<div style="background-image: linear-gradient(rgba(68, 138, 255, 0.68), rgba(68, 138, 255, 0.49)), url(images/user-bg.jpg); background-repeat: no-repeat; height: 10em;" >
+						<!-- profile img -->
+						<div class="flex justify-center items-center pt-8 box-border ">
+
+							<div class="flex flex-col items-center ">
+					<div><img src="images/avatar-4.jpg" alt="avater-img" class="h-16 w-16" style="border-radius: 50%;"></div>
+					<div class="text-white mt-2">John Doe</div>
+					</div>
+
+					</div>	
+					</div>
+
+				</div>
+
+				<div class="flex justify-center text-gray-600">
+					<div>
+
+				<div class="form-search mb-7 mt-8">
+						<input type="text" placeholder="Search Friend" class="border-b searchFrin border-gray-300 w-56" name="search">
+
+						</div>
+						
+
+						<div class="w-56 mb-9">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>Navigation</b></div>
+
+							<div style="color:white; background: #448aff;" class="p-2 py-3 rounded-sm">
+								<ol class="list-none inline-flex">
+									<li><i class="fa fa-home pr-3"></i></li>
+									<li>Dashboard</li>
+								</ol>
+					
+						</div>
+							<div class="border-b border-gray-300"></div>
+						</div>
+
+
+						<div class="w-56 mb-7">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>UI Element</b></div>
+
+							<ol class="list-none p-2 inline-flex">
+							<li ><i class="fas fa-th-large"></i></li>
+							<li class="pl-3 ">Basic</li>
+							</ol>
+							<!-- <div class="border-b border-gray-300"></div> -->
+						</div>
+
+
+						<div class="w-56 mb-7">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>Forms</b></div>
+
+								<ol class="list-none p-2 inline-flex">
+							<li ><i class="fas fa-receipt"></i></li>
+							<li class="pl-3 ">Forms</li>
+							</ol>
+							<!-- <div class="border-b border-gray-300"></div> -->
+						</div>
+
+
+
+						<div class="w-56 mb-7">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>Tables</b></div>
+							<ol class="list-none p-2 inline-flex">
+							<li ><i class="fas fa-table"></i></li>
+							<li class="pl-3 ">Tabel</li>
+							</ol>
+							<!-- <div class="border-b border-gray-300"></div> -->
+						</div>
+
+
+						<div class="w-56 mb-7">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>Charts And Maps</b></div>
+
+							<div>
+							<ol class="list-none p-2 inline-flex">
+							<li ><i class="far fa-chart-bar"></i></li>
+							<li class="pl-3 mb-1 ">Chart</li>
+							</ol>
+							</div>
+
+							<div>
+							<ol class="list-none p-2 inline-flex">
+							<li ><i class="fas fa-map-marked-alt"></i></li>
+							<li class="pl-3 mb-1 ">Maps</li>
+							</ol>
+							</div>
+
+						</div>
+
+							<div class="w-56 mb-8">
+							<div style="color: #448aff;" class="text-sm mb-3"><b>Pages</b></div>
+
+							<ol class="list-none p-2 inline-flex">
+							<li ><i class="far fa-id-card"></i></li>
+							<li class="pl-3 ">Pages</li>
+							</ol>
+						</div>
+
+						</div>
+
+						</div>
+						</div>
+
+		</nav>
+
+
+	<!-- <div id="opacity"></div> -->
+	<main class="content w-auto " id="main">
+
+		<div class="hero-section pt-14 text-white " >
+
+			<div class="parent-heroContent">
+			
+			<div class="containerz flex justify-between w-48 flex-wrap md:w-full">
+				
+				<div class="pb-3">
+					<div class="font-extrabold text-2xl pb-3">Dashboard</div>
+					<div class='text-sm'>welcome to volsk Loan</div>
+				</div>
+
+
+				<div class="md:mt-6">
+					<!-- <div> house icon</div> -->
+					<div class='font-extralight'>Dashboard</div>
+				</div>
+
+			</div>
+
+			</div>
+
+		</div>
+
+<!-- ================ -->
+
+	<div id="main-Content " class=" mt-10 ml-5 lg:mx-12 mr-5 flelx justify-centeur  ">
+		
+		<div class="containerzo ">
+
+			
+			<div id="Visitors-to-mail" class="shadow-md">
+
+				<div class="vistor&vol ">
+
+				<div class="sm:flex ">
+
+					<div class="visitor bg-white box-border sm:border-r sm:rounded-none sm:rounded-tl-md sm:border-gray-300 px-2 py-6 border-b sm:border-0 sm:w-2/4 rounded-t-md">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="far fa-user text-blue-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">10k</div>
+							<div class="text-gray-500">Visitors</div>
+						</div>
+						</div>
+
+					</div>
+						<!-- vis En -->
+
+					<div class="volume bg-white box-border px-2 sm:rounded-none sm:rounded-tr-md border-b sm:border-0 py-6 sm:w-2/4 ">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="fas fa-volume-down text-green-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">100%</div>
+							<div class="text-gray-500">Volume</div>
+						</div>
+						</div>
+
+
+					</div>
+
+				</div>	
+
+
+				</div>
+
+				<div class="files&mail sm:border-t border-gray-300 ">
+
+				<div class="sm:flex ">
+
+					<div class="files bg-white box-border sm:border-r sm:border-gray-300 sm:rounded-none   sm:rounded-bl-md px-2 py-6 border-b sm:border-0 sm:w-2/4">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class=" far fa-file-alt text-red-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">2000+</div>
+							<div class="text-gray-500">Files</div>
+						</div>
+						</div>
+
+					</div>
+						<!-- vis En -->
+
+					<div class="mail bg-white box-border px-2 py-6 sm:w-2/4 rounded-b-md sm:rounded-none   sm:rounded-br-md ">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="far fa-envelope-open text-blue-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">120</div>
+							<div class="text-gray-500">Mail</div>
+						</div>
+						</div>
+
+
+					</div>
+
+				</div>	
+
+				<!-- en of vis &&  mail -->
+
+				</div>
+			</div>
+
+				<div id="share-to-conect" class="shadow-md">
+
+				<div class="share&connection mt-10">
+
+				<div class="sm:flex ">
+
+					<div class="visitor bg-white box-border sm:border-r sm:border-gray-300 px-2 py-6 border-b sm:border-0 sm:w-2/4 rounded-t-md sm:rounded-none sm:rounded-tl-md">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="fas fa-share-alt text-blue-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">1000</div>
+							<div class="text-gray-500">Share</div>
+						</div>
+						</div>
+
+					</div>
+						<!-- vis En -->
+
+					<div class="volume bg-white box-border px-2 border-b sm:border-0 py-6 sm:w-2/4 sm:rounded-none   sm:rounded-tr-md ">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="fas fa-sitemap text-green-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">600</div>
+							<div class="text-gray-500">Network</div>
+						</div>
+						</div>
+
+
+					</div>
+
+				</div>	
+
+
+				</div>
+
+				<div class="files&mail sm:border-t border-gray-300 ">
+
+				<div class="sm:flex ">
+
+					<div class="files bg-white box-border sm:border-r sm:border-gray-300 px-2 py-6 border-b sm:border-0 sm:w-2/4 sm:rounded-none sm:rounded-bl-md">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class=" fas fa-signal text-red-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">350</div>
+							<div class="text-gray-500">Returns</div>
+						</div>
+						</div>
+
+					</div>
+						<!-- connet En -->
+
+					<div class="mail bg-white box-border px-2 py-6 sm:w-2/4 rounded-b-md sm:rounded-none   sm:rounded-br-md">
+
+						<div class="flex justify-around items-center ">
+						<div class="text-2xl"><i class="fas fa-wifi text-blue-600"></i></div>
+
+						<div class="text-center">
+							<div class="text-xl text-gray-600 md:text-2xl">100%</div>
+							<div class="text-gray-500">Connection</div>
+						</div>
+						</div>
+
+
+					</div>
+
+				</div>	
+
+
+				</div>
+			</div>
+
+
+			<div class="" id="ratings&&achive  ">
+
+				<div>
+					
+					<div class="flex mt-10">
+						<i class="fas fa-star bg-myGreen-200 rounded-l-md text-white p-8"></i>
+				
+						<div class="bg-myGreen-100 rounded-r-md text-white w-95 pt-4 pl-4">
+						<div>4000+</div>
+						<div>Ratings Recevied</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+
+
+					<div class="" id="ratings&&achive  ">
+
+				<div>
+					
+					<div class="flex mt-10">
+						<i class="fas fa-trophy rounded-l-md bg-myBlue-200 text-white p-8"></i>
+						<div class="bg-myBlue-100 text-white rounded-r-md w-95 pt-4 pl-4">
+						<div>14</div>
+						<div>Achievements</div>
+					</div>
+					</div>
+
+				</div>
+				
+			</div>
+
+
+		</div>
+
+		<div class="sec-two">
+			
+
+			<div class="membership">
+				
+				<div class="membership-content bg-white shadow-md mt-10 rounded-md">
+					
+					<div id="membership-content-main">
+						
+						<div>
+							<!-- membership sec -->
+							<div class="list-none flex items-center justify-start -ml-4 border-gray-300 p-4">
+								<h6 class="text-gray-600 border-l-4 pl-4 border-blue-500"><b>Membership Performance</b></h6>
+								<div class="hidden"><i class="fa fa-wrench"></i></div>
+							</div>
+					
+						</div>
+
+
+						<div id="userOne">
+							<!-- user one -->
+							<div class="flex items-center-center lg:px-12 lg:justify-between justify-around border-t py-4">
+							<div>
+								<img src="images/avatar-2.jpg" alt='user-image' class="avater-img h-12">
+								<div class="text-gray-500 "><b>Shirley Hoe</b></div>
+								<div class="text-gray-400 text-sm">Sales executive, NY</div>
+							</div>
+
+							<div class="flex flex-col items-end">
+								<div class="text-gray-700"><b>$78.001</b></div>
+								<i class="fas fa-level-down-alt text-red-500"></i>
+							</div>
+
+							</div>
+							<!-- end of user one -->
+						</div>
+
+
+
+						<div id="userTwo">
+							<!-- user two -->
+							<div class="flex items-center-center justify-around lg:px-12 lg:justify-between py-4 border-t">
+							<div>
+								<img src="images/avatar-4.jpg" alt='user-image' class="avater-img h-12">
+								<div class="text-gray-500 "><b>Shirley Hoe</b></div>
+								<div class="text-gray-400 text-sm">Sales executive, NY</div>
+							</div>
+
+							<div class="flex flex-col items-end">
+								<div class="text-gray-700"><b>$78.001</b></div>
+								<i class="fas fa-level-up-alt text-green-500"></i>
+							</div>
+
+							</div>
+
+						</div>
+
+						<div id="userThree">
+							<!-- user three -->
+							<div class="flex items-center-center justify-around lg:px-12 lg:justify-between py-4 border-t">
+							<div>
+								<img src="images/avatar-2.jpg" alt='user-image' class="avater-img h-12">
+								<div class="text-gray-500 "><b>Shirley Hoe</b></div>
+								<div class="text-gray-400 text-sm">Sales executive, NY</div>
+							</div>
+
+							<div class="flex flex-col items-end">
+								<div class="text-gray-700"><b>$78.001</b></div>
+								<i class="fas fa-level-up-alt text-green-500"></i>
+							</div>
+
+							</div>
+
+						</div>
+
+
+						<div id="userfour">
+							<!-- user 4 -->
+							<div class="flex items-center-center lg:px-12 lg:justify-between justify-around py-4 pb-6 border-t">
+							<div>
+								<img src="images/avatar-4.jpg" alt='user-image' class="avater-img h-12">
+								<div class="text-gray-500 "><b>Shirley Hoe</b></div>
+								<div class="text-gray-400 text-sm">Sales executive, NY</div>
+							</div>
+
+							<div class="flex flex-col items-end">
+								<div class="text-gray-700"><b>$78.001</b></div>
+								<i class="fas fa-level-up-alt text-green-500"></i>
+							</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- en meber -->
+			</div>
+
+				<div id='total-to-mEnarnigs' class="lg:flex lg:justify-center">
+					
+
+					<div class="lg:flex lg:flex-wrap lg:justify-between lg:w-full">
+						
+
+						<div id="totalsub" class="bg-white lg:w-109 shadow-md py-7 mt-10 rounded-md flex justify-center items-center flex-col ">
+							
+							<h6 class="text-gray-600 mb-3"><b>Total Subscription</b></h6>
+ 
+							<div class="flex justify-center flex-row items-center mb-3">
+								<i class="text-red-500 fa fa-arrow-down mr-3"></i>
+								<div class="text-gray-600">7653</div>
+							</div>
+
+							<div class="text-sm text-gray-500">48% From Last 24 Hours</div>
+							<!-- en of totals -->
+						</div>
+
+						<div id="orderStatus" class="bg-white lg:w-109 shadow-md py-7 mt-10 rounded-md flex justify-center items-center flex-col">
+
+							<h6 class="text-gray-600 mb-3"><b>Total Subscription</b></h6>
+ 
+							<div class="flex justify-center flex-row items-center mb-3">
+								<i class="text-green-500 fa fa-arrow-up mr-3"></i>
+								<div class="text-gray-600">7653</div>
+							</div>
+
+							<div class="text-sm text-gray-500">38% From Last 6 Months</div>
+							<!-- end of order -->
+						</div>
+
+
+						<div id="orderStatus" class="bg-red-600 py-7 lg:w-109 px-5 mt-10 rounded-md justify-between items-center flex text-white">
+
+							<div>
+								<div>486</div>
+								<div>Total Comment</div>
+							</div>
+
+								<div class="text-xs -mt-11">15%</div>
+							<!-- end of total comment -->
+						</div>
+
+
+								<div id="orderStatus" style='background-color:#11c15b;' class="py-7 px-5 mt-10 rounded-md justify-between items-center lg:w-109 flex text-white">
+
+							<div>
+								<div>$4896</div>
+								<div>Total Income</div>
+							</div>
+
+								<div class="text-xs -mt-11">25%</div>
+							<!-- end of total Income -->
+						</div>
+
+							<div id="UniqueVisitors" class="bg-white shadow-md py-7 lg:w-109 mt-10 rounded-md flex justify-center items-center flex-col">
+
+							<h6 class="text-gray-600 mb-3"><b>Unique Visitors</b></h6>
+ 
+							<div class="flex justify-center flex-row items-center mb-3">
+								<i class="text-red-500 fa fa-arrow-down mr-3"></i>
+								<div class="text-gray-600">753</div>
+							</div>
+
+							<div class="text-sm text-gray-500">38% From Last 6 Months</div>
+							<!-- end of unique vistors -->
+						</div>
+
+
+							<div id="mEarnings" class="bg-white py-7 lg:w-109 shadow-md mt-10 rounded-md flex justify-center items-center flex-col">
+
+							<h6 class="text-gray-600 mb-3"><b>Monthly Earnings</b></h6>
+ 
+							<div class="flex justify-center flex-row items-center mb-3">
+								<i class="text-green-500 fa fa-arrow-up mr-3"></i>
+								<div class="text-gray-600">753</div>
+							</div>
+
+							<div class="text-sm text-gray-500">38% From Last 6 Months</div>
+							<!-- end of unique vistors -->
+						</div>
+
+
+					</div>
+
+				</div>			
+
+
+		</div>
+
+
+				<div id="Projects" class="bg-white py-7 px-6 mt-10 lg:py-11 rounded-md shadow-md flex-col">
+
+								<div class="lg:flex lg:justify-between lg:flex-wrap">
+									
+									<div id="published-project" class="w-109">
+											<!-- project one -->
+										<h6 class="font-semibold text-gray-600 text-base mb-2">Published Project</h6>
+
+										<div class="mb-4">
+											<ol class="list-none inline-flex">
+												<li class="font-semibold text-gray-600 text-xl">532</li>
+												<li class="text-green-500 ml-3 text-xl font-semibold">+1.69%</li>
+											</ol>
+										</div>
+
+										<div class="progress bg-gray-300 rounded-md flex">
+											<div class="progressMain w-1/4 bg-red-500 rounded-md" style="height: 6px;"></div>
+										</div>
+
+										</div>
+
+										<div id="CompletedTask " class="w-109">
+											<!-- project two -->
+										<h6 class="font-semibold text-gray-600 text-base mt-11 lg:mt-0 mb-2">Completed Task</h6>
+
+										<div class="mb-4">
+											<ol class="list-none inline-flex">
+												<li class="font-semibold text-gray-600 text-xl">4,932</li>
+												<li class="text-red-500 ml-3 text-xl font-semibold">+1.69%</li>
+											</ol>
+										</div>
+
+										<div class="progress bg-gray-300 rounded-md flex">
+											<div class="progressMain w-2/3 bg-blue-500 rounded-md" style="height: 6px;"></div>
+										</div>
+									</div>
+
+
+									<div id="Successfull " class="w-109">
+											<!-- project two -->
+										<h6 class="font-semibold text-gray-600 text-base mt-11 mb-2">Successfull Task</h6>
+
+										<div class="mb-4">
+											<ol class="list-none inline-flex">
+												<li class="font-semibold text-gray-600 text-xl">8.9*</li>
+												<li class="text-green-500 ml-3 text-xl font-semibold">+0.99%</li>
+											</ol>
+										</div>
+
+										<div class="progress bg-gray-300 flex rounded-md">
+											<div class="progressMain w-4/5 bg-green-500 rounded-md" style="height: 6px;"></div>
+										</div>
+									</div>
+
+
+									<div id="Ongoing Projects" class="w-109">
+											<!-- project two -->
+										<h6 class="font-semibold text-gray-600 text-base mt-11 mb-2">Ongoing Projects</h6>
+
+										<div class="mb-4">
+											<ol class="list-none inline-flex">
+												<li class="font-semibold text-gray-600 text-xl ">4,932</li>
+												<li class="text-green-500 ml-3 text-xl font-semibold">+0.69%</li>
+											</ol>
+										</div>
+
+										<div class="progress bg-gray-300 flex rounded-md">
+											<div class="progressMain w-2/5 bg-yellow-400 rounded-md" style="height: 6px;"></div>
+										</div>
+									</div>
+
+
+
+								</div>
+				
+				</div>
+
+
+	</div>
+
+</main>
+<script src="js/nav.js"></script>
+</body>
+</html>
