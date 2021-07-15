@@ -45,3 +45,16 @@
 	border-bottom-width: 2px;
 }
 
+
+.sicves:hover {
+	background:#448aff;
+	color: #ffff;
+}
+
+.Upgrade{
+	transition: .2s ease all;
+}
+
+.Upgrade:hover {
+	background-color: #256fec !important;
+} 

@@ -10,7 +10,13 @@ module.exports = {
         96:"45vw",
         97:'40vw',
         95:'182%',
-        109:'47%'
+        109:'47%',
+        "desktop" : '12.5',
+        "wid":"30%",
+        "mem":'111%',
+        'sub':'44%',
+        'mearn':'126%',
+        'jec':'21%'
       },
 
       colors: {
@@ -29,7 +35,8 @@ module.exports = {
       // margin
 
       margin: {
-        29:'-10.45em'
+        29:'-10.45em',
+        '-360':'-36px'
       },
 
       borderWidth: {
